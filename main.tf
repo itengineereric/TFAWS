@@ -11,3 +11,7 @@ module "vpcmodule" {
   source = "./VPC"
   vpcname  = "APAC-SG-VPC"
 }
+
+output "module_output" {
+  value       = module.ec2module.instance_id
+}
