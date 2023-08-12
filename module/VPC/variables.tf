@@ -23,3 +23,19 @@ variable "region" {
   description = "region name"
 }
 
+variable "create_untrustedsg" {
+  type        = bool
+  default     = false
+  description = "description"
+}
+variable "create_trustedsg" {
+  type        = bool
+  default     = false
+  description = "description"
+}
+
+variable "create_natgw" {
+  type        = bool
+  default     = false
+  description = "description"
+}
