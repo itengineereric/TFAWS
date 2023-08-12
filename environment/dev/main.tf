@@ -10,9 +10,7 @@ module "vpc" {
   # subnet.tf
   pubsubcidr = var.pubsubcidr
   privsubcidr = var.privsubcidr
-
   create_trustedsg = var.create_trustedsg 
   create_untrustedsg = var.create_untrustedsg
-
   create_natgw = var.create_natgw
 }
