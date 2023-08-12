@@ -1,28 +1,28 @@
-variable vpcname {
+variable "vpcname" {
   type        = string
   default     = "APAC-SG-VPC"
   description = "description"
 }
 
-variable prj {
+variable "prj" {
   type        = number
   default     = "10"
   description = "description"
 }
 
-variable env {
+variable "env" {
   default     = true
   description = "description"
 }
 
-variable mylist {
+variable "mylist" {
   type        = list(string)
-  default     = ["value1","value2","value3"]
+  default     = ["value1", "value2", "value3"]
   description = "description"
 }
-variable mymap {
-  type        = map
-  default     = {
+variable "mymap" {
+  type = map(any)
+  default = {
     Key1 = "value1"
     Key2 = "value2"
   }

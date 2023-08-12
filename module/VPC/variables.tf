@@ -5,12 +5,12 @@ variable "vpccidr" {
 
 variable "pubsubcidr" {
   type        = list(string)
-  default = []
+  default     = []
   description = "cidr values"
 }
 variable "privsubcidr" {
   type        = list(string)
-  default = []
+  default     = []
   description = "cidr values"
 }
 variable "env" {
